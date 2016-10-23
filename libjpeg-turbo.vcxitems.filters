@@ -90,12 +90,5 @@
     <CustomBuild Include="$(MSBuildThisFileDirectory)libjpeg-turbo\simd\*-64.asm" />
     <CustomBuild Include="$(MSBuildThisFileDirectory)libjpeg-turbo\simd\*-64.asm" />
     <CustomBuild Include="$(MSBuildThisFileDirectory)libjpeg-turbo\simd\*-64.asm" />
-    <CustomBuild Include="$(MSBuildThisFileDirectory)libjpeg-turbo\simd\*-64.asm" />
-    <CustomBuild Include="$(MSBuildThisFileDirectory)libjpeg-turbo\simd\*-64.asm" />
-    <CustomBuild Include="$(MSBuildThisFileDirectory)libjpeg-turbo\simd\*-64.asm" />
-    <CustomBuild Include="$(MSBuildThisFileDirectory)libjpeg-turbo\simd\*-64.asm" />
-    <CustomBuild Include="$(MSBuildThisFileDirectory)libjpeg-turbo\simd\*-64.asm" />
-    <CustomBuild Include="$(MSBuildThisFileDirectory)libjpeg-turbo\simd\*-64.asm" />
-    <CustomBuild Include="$(MSBuildThisFileDirectory)libjpeg-turbo\simd\*-64.asm" />
   </ItemGroup>
 </Project>
