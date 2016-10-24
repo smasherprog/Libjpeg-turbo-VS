@@ -231,24 +231,28 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>Clang_3_8</PlatformToolset>
     <UseOfStl>c++_static</UseOfStl>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_shared|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>Clang_3_8</PlatformToolset>
     <UseOfStl>c++_shared</UseOfStl>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_static|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>Clang_3_8</PlatformToolset>
     <UseOfStl>c++_static</UseOfStl>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_shared|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>Clang_3_8</PlatformToolset>
     <UseOfStl>c++_shared</UseOfStl>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings" />
@@ -295,7 +299,7 @@
       </Command>
     </PreLinkEvent>
     <PostBuildEvent>
-      <Command>$(ToolchainPrebuiltPath)\bin\x86_64-linux-android-ar.exe -rsv  "$(TargetPath)" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)jfdctflt-sse-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCCOLOR-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCGRAY-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCHUFF-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCSAMPLE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDCOLOR-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDMERGE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDSAMPLE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTFST-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTINT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFLT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFST-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTINT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTRED-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTF-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTI-SSE2-64.O"</Command>
+      <Command>$(ToolchainPrebuiltPath)\bin\$(ToolchainPrefix)ar.exe -rsv "$(TargetPath)" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)jfdctflt-sse-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCCOLOR-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCGRAY-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCHUFF-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCSAMPLE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDCOLOR-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDMERGE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDSAMPLE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTFST-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTINT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFLT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFST-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTINT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTRED-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTF-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTI-SSE2-64.O"</Command>
       <Message>Adding Assembly object files to archiver</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -318,7 +322,7 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);SIZEOF_SIZE_T=8</PreprocessorDefinitions>
     </ClCompile>
     <PostBuildEvent>
-      <Command>$(ToolchainPrebuiltPath)\bin\x86_64-linux-android-ar.exe -rsv  "$(TargetPath)" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)jfdctflt-sse-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCCOLOR-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCGRAY-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCHUFF-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCSAMPLE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDCOLOR-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDMERGE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDSAMPLE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTFST-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTINT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFLT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFST-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTINT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTRED-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTF-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTI-SSE2-64.O"</Command>
+      <Command>$(ToolchainPrebuiltPath)\bin\$(ToolchainPrefix)ar.exe -rsv  "$(TargetPath)" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)jfdctflt-sse-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCCOLOR-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCGRAY-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCHUFF-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCSAMPLE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDCOLOR-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDMERGE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDSAMPLE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTFST-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTINT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFLT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFST-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTINT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTRED-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTF-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTI-SSE2-64.O"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Adding Assembly object files to archiver</Message>
