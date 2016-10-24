@@ -89,18 +89,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_shared|ARM64'">
     <OutDir>$(SolutionDir)Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>Intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libjpeg-turbo</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_static|ARM64'">
     <OutDir>$(SolutionDir)Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>Intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libjpeg-turbo</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_shared|ARM64'">
     <OutDir>$(SolutionDir)Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>Intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libjpeg-turbo</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_static|ARM64'">
     <OutDir>$(SolutionDir)Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>Intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libjpeg-turbo</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_shared|ARM64'">
     <ClCompile>
