@@ -193,6 +193,19 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_static|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="libjpeg-turbo\simd\jfdctflt-sse-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_static|x64'">$(SolutionDir)nasm.exe -fwin$(PlatformArchitecture) -DWIN$(PlatformArchitecture)  -D__x86_64__ %(FullPath) -i$(SolutionDir)libjpeg-turbo\simd\ -i$(SolutionDir)libjpeg-turbo\win\  -o$(MSBuildThisFileDirectory)$(IntermediateOutputPath)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_static|x64'">%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_shared|x64'">$(SolutionDir)nasm.exe -fwin$(PlatformArchitecture) -DWIN$(PlatformArchitecture)  -D__x86_64__ %(FullPath) -i$(SolutionDir)libjpeg-turbo\simd\ -i$(SolutionDir)libjpeg-turbo\win\  -o$(MSBuildThisFileDirectory)$(IntermediateOutputPath)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_shared|x64'">%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_shared|x64'">$(SolutionDir)nasm.exe -fwin$(PlatformArchitecture) -DWIN$(PlatformArchitecture)  -D__x86_64__ %(FullPath) -i$(SolutionDir)libjpeg-turbo\simd\ -i$(SolutionDir)libjpeg-turbo\win\  -o$(MSBuildThisFileDirectory)$(IntermediateOutputPath)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_shared|x64'">%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_static|x64'">$(SolutionDir)nasm.exe -fwin$(PlatformArchitecture) -DWIN$(PlatformArchitecture)  -D__x86_64__ %(FullPath) -i$(SolutionDir)libjpeg-turbo\simd\ -i$(SolutionDir)libjpeg-turbo\win\  -o$(MSBuildThisFileDirectory)$(IntermediateOutputPath)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_static|x64'">%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7BCCAEF5-E6C5-44C1-9411-321A4B7970FB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
