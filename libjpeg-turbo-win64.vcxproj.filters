@@ -57,10 +57,8 @@
     <CustomBuild Include="libjpeg-turbo\simd\jquantf-sse2-64.asm">
       <Filter>Source Files</Filter>
     </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="libjpeg-turbo\simd\jfdctflt-sse-64.asm">
+    <CustomBuild Include="libjpeg-turbo\simd\jfdctflt-sse-64.asm">
       <Filter>Source Files</Filter>
-    </None>
+    </CustomBuild>
   </ItemGroup>
 </Project>

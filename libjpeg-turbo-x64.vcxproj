@@ -286,7 +286,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(ProjectDir)libjpeg-turbo\simd\;$(ProjectDir)libjpeg-turbo\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>SIZEOF_SIZE_T=8</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WITH_SIMD;SIZEOF_SIZE_T=8</PreprocessorDefinitions>
     </ClCompile>
     <Lib>
       <AdditionalOptions>
@@ -312,7 +312,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(ProjectDir)libjpeg-turbo\simd\;$(ProjectDir)libjpeg-turbo\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>SIZEOF_SIZE_T=8</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WITH_SIMD;SIZEOF_SIZE_T=8</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)$(IntermediateOutputPath)jfdctflt-sse-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCCOLOR-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCGRAY-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCHUFF-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCSAMPLE-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDCOLOR-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDMERGE-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDSAMPLE-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTFST-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTINT-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFLT-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFST-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTINT-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTRED-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTF-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTI-SSE2-64.O;%(AdditionalDependencies)</AdditionalDependencies>
@@ -323,7 +323,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(ProjectDir)libjpeg-turbo\simd\;$(ProjectDir)libjpeg-turbo\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);SIZEOF_SIZE_T=8</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WITH_SIMD;NDEBUG;%(PreprocessorDefinitions);SIZEOF_SIZE_T=8</PreprocessorDefinitions>
     </ClCompile>
     <PostBuildEvent>
       <Command>$(ToolchainPrebuiltPath)\bin\$(ToolchainPrefix)ar.exe -rsv  "$(TargetPath)" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)jfdctflt-sse-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCCOLOR-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCGRAY-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCHUFF-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCSAMPLE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDCOLOR-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDMERGE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDSAMPLE-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTFST-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTINT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFLT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFST-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTINT-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTRED-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTF-SSE2-64.O" "$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTI-SSE2-64.O"</Command>
@@ -337,7 +337,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(ProjectDir)libjpeg-turbo\simd\;$(ProjectDir)libjpeg-turbo\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);SIZEOF_SIZE_T=8</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WITH_SIMD;NDEBUG;%(PreprocessorDefinitions);SIZEOF_SIZE_T=8</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)$(IntermediateOutputPath)jfdctflt-sse-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCCOLOR-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCGRAY-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCHUFF-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JCSAMPLE-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDCOLOR-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDMERGE-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JDSAMPLE-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTFST-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JFDCTINT-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFLT-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTFST-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTINT-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JIDCTRED-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTF-SSE2-64.O;$(MSBuildThisFileDirectory)$(IntermediateOutputPath)JQUANTI-SSE2-64.O;%(AdditionalDependencies)</AdditionalDependencies>
